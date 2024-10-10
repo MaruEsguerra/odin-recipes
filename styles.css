@@ -1,18 +1,53 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color:antiquewhite;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+html {
+    background-color: #fffbf7;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.grid > div {
+    border: 5px solid #ccc;
+}
+
+.food {
+    width: 100%;
+    height: auto;
+}
+
+.ingredients,
+.steps {
+    padding: 20px;
+    text-align: justify;
+}
+
+.image-store {
+    position: relative;
     text-align: center;
 }
 
-h2, p {
-    text-align: justify;
+.description {
+    position: absolute;
+    left: 5px;
+    bottom: 10px;
+    right: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    display: inline-block;
 }
 
-ul, ol {
-    list-style-position: inside;
-}
-
-li {
-    text-align: justify;
-    padding-top: 4px;
+h1,
+h2 {
+    text-align: center;
 }
